@@ -21,7 +21,7 @@ sudo cp adwaita-night.jpg /usr/share/backgrounds/custom/adwaita-night.jpg
 
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme
 cd WhiteSur-gtk-theme
-./install.sh -c dark -p 30 -i simple --normal 
+./install.sh -s -c dark -p 30 -i simple --normal 
 
 #gsettings set org.gnome.desktop.interface gtk-theme Dracula
 gsettings set org.gnome.desktop.interface cursor-theme WhiteSur-cursors
