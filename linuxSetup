@@ -16,7 +16,8 @@ mv McMojave-circle-blue ~/.themes
 tar -xf WhiteSur-cursors.tar.xz
 mv WhiteSur-cursors ~/.themes
 
-mv adwaita-night.jpg /usr/share/backgrounds/custom
+sudo mkdir /usr/share/backgrounds/custom
+sudo cp adwaita-night.jpg /usr/share/backgrounds/custom/adwaita-night.jpg
 
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme
 cd WhiteSur-gtk-theme
@@ -52,7 +53,7 @@ sudo snap install teams
 
 ##########Andere zooi##########
 #Python
-sudo apt-get install Python
+sudo apt-get install python
 
 echo ""
 echo "Nog te installeren:"
