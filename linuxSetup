@@ -1,0 +1,25 @@
+#!/usr/bin/bash
+
+mkdir ~/.themes
+sudo apt install gnome-shell-extensions
+sudo apt install gnome-tweaks
+
+tar -xf Dracula.tar.xz
+mv Dracula ~/.themes
+
+tar -xf McMojave-circle-blue.tar.xz
+mv McMojave-circle-blue ~/.themes
+
+tar -xf WhiteSur-cursors.tar.xz
+mv WhiteSur-cursors ~/.themes
+
+gsettings set org.gnome.desktop.interface gtk-theme Dracula
+gsettings set org.gnome.desktop.interface cursor-theme WhiteSur-cursors
+gsettings set org.gnome.desktop.interface icon-theme McMojave-circle-blue
+
+rm -rf Dracula-alt-style
+rm -rf Dracula-slim
+rm -rf Dracula-slim-standard-buttons
+rm -rf Dracula-standard-buttons
+rm -rf McMojave-circle-blue-dark
+
