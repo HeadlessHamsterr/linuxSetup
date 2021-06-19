@@ -51,6 +51,7 @@ sudo snap install gimp
 sudo snap install teams
 
 ##########Andere zooi##########
+#Python
 sudo apt-get install Python
 
 echo ""
@@ -63,3 +64,4 @@ echo "Dash to Dock"
 echo "Screenshot tool"
 echo "Sound Input & Output device chooser"
 echo "Steal my focus"
+echo "Refind met refind-ambience theme"
