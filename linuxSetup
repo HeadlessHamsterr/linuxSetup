@@ -1,5 +1,8 @@
 #!/usr/bin/bash
+sudo apt update
+sudo apt upgrade
 
+#Themes instaleren
 mkdir ~/.themes
 sudo apt install gnome-shell-extensions
 sudo apt install gnome-tweaks
@@ -13,13 +16,50 @@ mv McMojave-circle-blue ~/.themes
 tar -xf WhiteSur-cursors.tar.xz
 mv WhiteSur-cursors ~/.themes
 
-gsettings set org.gnome.desktop.interface gtk-theme Dracula
+mv adwaita-night.jpg /usr/share/backgrounds/custom
+
+git clone https://github.com/vinceliuice/WhiteSur-gtk-theme
+cd WhiteSur-gtk-theme
+./install.sh -c dark -p 30 -i simple --normal 
+
+#gsettings set org.gnome.desktop.interface gtk-theme Dracula
 gsettings set org.gnome.desktop.interface cursor-theme WhiteSur-cursors
 gsettings set org.gnome.desktop.interface icon-theme McMojave-circle-blue
+gsettings set org.gnome.desktop.interface gtk-theme WhiteSur-dark
+gsettings set org.gnome.shell.extensions.user-theme name WhiteSur-dark
+gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgrounds/custom/adwaita-night.jpg
 
-rm -rf Dracula-alt-style
-rm -rf Dracula-slim
-rm -rf Dracula-slim-standard-buttons
-rm -rf Dracula-standard-buttons
-rm -rf McMojave-circle-blue-dark
+##########Programma's installeren##########
+sudo apt install snapd
 
+#VSCode
+#sudo snap install --classic code
+
+#Spotify
+#sudo snap install spotify
+
+#Firefox
+#sudo snap install firefox
+
+#Discord
+#sudo snap install discord
+
+#GIMP
+#sudo snap install gimp
+
+#Teams
+#sudo snap install teams
+
+##########Andere zooi##########
+#sudo apt-get install Python
+
+echo ""
+echo "Nog te installeren:"
+echo "Alt tab: Raise first window"
+echo "Always show workspaces"
+echo "Compiz alike magic lamp effect (404 ms)"
+echo "Control blur effect on lockscreen (0 en 0)"
+echo "Dash to Dock"
+echo "Screenshot tool"
+echo "Sound Input & Output device chooser"
+echo "Steal my focus"
