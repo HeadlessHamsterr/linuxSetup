@@ -33,25 +33,25 @@ gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgro
 sudo apt install snapd
 
 #VSCode
-#sudo snap install --classic code
+sudo snap install --classic code
 
 #Spotify
-#sudo snap install spotify
+sudo snap install spotify
 
 #Firefox
-#sudo snap install firefox
+sudo snap install firefox
 
 #Discord
-#sudo snap install discord
+sudo snap install discord
 
 #GIMP
-#sudo snap install gimp
+sudo snap install gimp
 
 #Teams
-#sudo snap install teams
+sudo snap install teams
 
 ##########Andere zooi##########
-#sudo apt-get install Python
+sudo apt-get install Python
 
 echo ""
 echo "Nog te installeren:"
